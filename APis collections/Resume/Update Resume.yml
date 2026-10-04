@@ -1,0 +1,23 @@
+info:
+  name: Update Resume
+  type: http
+
+http:
+  method: PATCH
+  url: http://127.0.0.1:8000/api/resumes/1/update/
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NjYzNzQ4LCJpYXQiOjE3ODQ2NjE5NDgsImp0aSI6ImE0MDg3YjIzOTM1YzQ0NzBhNzczMWUxYjFhNDhkY2EzIiwidXNlcl9pZCI6IjIifQ.lxGnx1_ru3eb7yrco3vU4RJv8uTXNkQuiuQIPSPJlFQ
+  body:
+    type: json
+    data: |-
+      {
+          "title":"My Updated Resume"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

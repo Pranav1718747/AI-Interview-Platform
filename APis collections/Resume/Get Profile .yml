@@ -1,0 +1,24 @@
+info:
+  name: "Get Profile "
+  type: http
+  seq: 1
+
+http:
+  method: GET
+  url: http://127.0.0.1:8000/api/auth/profile/
+  headers:
+    - name: ""
+      value: |
+        Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NjU3MjY1LCJpYXQiOjE3ODQ2NTU0NjUsImp0aSI6IjI2MTViMmJhYjNlODRlOTk4ZTJhOTU5Yzg5ZTUzM2NiIiwidXNlcl9pZCI6IjIifQ.eCs8YyV4_puoEAuHnRlOJHJX_2Dc-h8bboz9MSsXrqE
+        Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NjU3MjY1LCJpYXQiOjE3ODQ2NTU0NjUsImp0aSI6IjI2MTViMmJhYjNlODRlOTk4ZTJhOTU5Yzg5ZTUzM2NiIiwidXNlcl9pZCI6IjIifQ.eCs8YyV4_puoEAuHnRlOJHJX_2Dc-h8bboz9MSsXrqE
+        Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NjU3MjY1LCJpYXQiOjE3ODQ2NTU0NjUsImp0aSI6IjI2MTViMmJhYjNlODRlOTk4ZTJhOTU5Yzg5ZTUzM2NiIiwidXNlcl9pZCI6IjIifQ.eCs8YyV4_puoEAuHnRlOJHJX_2Dc-h8bboz9MSsXrqE
+      disabled: true
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NjYzNzQ4LCJpYXQiOjE3ODQ2NjE5NDgsImp0aSI6ImE0MDg3YjIzOTM1YzQ0NzBhNzczMWUxYjFhNDhkY2EzIiwidXNlcl9pZCI6IjIifQ.lxGnx1_ru3eb7yrco3vU4RJv8uTXNkQuiuQIPSPJlFQ
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

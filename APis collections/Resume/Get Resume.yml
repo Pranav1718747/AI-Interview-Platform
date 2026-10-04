@@ -1,0 +1,18 @@
+info:
+  name: Get Resume
+  type: http
+
+http:
+  method: GET
+  url: http://127.0.0.1:8000/api/resumes/
+  headers:
+    - name: Authorization
+      value: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NjYxODAwLCJpYXQiOjE3ODQ2NjAwMDAsImp0aSI6IjMzNjAxZWNhY2ZlYzRiZGU5YTg1OWI2OTMyMmFlMWEyIiwidXNlcl9pZCI6IjIifQ.Q3V3dFZ-Bro2AYB2IGtaXTA5Fw8Bl34LequqONI5Seo
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​

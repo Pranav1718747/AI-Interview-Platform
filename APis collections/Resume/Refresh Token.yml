@@ -1,0 +1,20 @@
+info:
+  name: Refresh Token
+  type: http
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/token/refresh/
+  body:
+    type: json
+    data: |-
+      {
+          "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4NTI2MDUwMiwiaWF0IjoxNzg0NjU1NzAyLCJqdGkiOiI4ZGY5NTQwY2JiODI0YjQ3YWFmZDgwNzMyYjdiMTYwOSIsInVzZXJfaWQiOiIyIn0.wmoPy1k4Hxj9yBCB9QIghRfA8OH8N0NUrjB4d1TOUYY"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

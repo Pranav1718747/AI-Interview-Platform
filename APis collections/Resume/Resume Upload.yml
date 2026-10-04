@@ -1,0 +1,30 @@
+info:
+  name: Resume Upload
+  type: http
+
+http:
+  method: POST
+  url: http://127.0.0.1:8000/api/resumes/upload/
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0NjU3NTAyLCJpYXQiOjE3ODQ2NTU3MDIsImp0aSI6IjRkOTlkZWNkODM4YzQ1ZWRiNTJkMTk4OTc2MjUxMDE4IiwidXNlcl9pZCI6IjIifQ.trR-nD1OOxEKzGkXtBcgsZ6cyFm50QXUb1vo45Fcemc
+  body:
+    type: multipart-form
+    data:
+      - name: title
+        type: text
+        value: My Resume
+        contentType: Text
+      - name: resume
+        type: file
+        value:
+          - /Users/pranav1718/Library/Mobile Documents/com~apple~CloudDocs/brochure.pdf
+        contentType: File
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​
