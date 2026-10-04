@@ -1,8 +1,6 @@
 # ==========================================
 # Environment Variables & Secrets
 # ==========================================
-.env
-.env.*
 *.env
 !.env.example
 !backend/.env.example
@@ -89,9 +87,9 @@ ehthumbs.db
 Thumbs.db
 
 # IDE & Editor files
-.vscode/*
 !.vscode/extensions.json
 .idea/
 *.swp
 *.swo
 *~
+config.bat
